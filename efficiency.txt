@@ -1,0 +1,26 @@
+Efficiency Analysis:
+
+1. Initialization Methods:
+   - public Dictionary(String s): O(1)
+   - public Dictionary(): O(1)
+   - public Dictionary(File f): O(n log n)
+
+2. Add Word (addWord):
+   - Time Complexity: O(log n)
+     Explanation: In the worst case, the height of the tree is logarithmic with respect to the number of nodes.
+
+3. Find Word (findWord):
+   - Time Complexity: O(log n)
+     Explanation:The search operation traverses the tree from the root to the leaf, and the height of the tree is logarithmic.
+
+4. Delete Word (deleteWord):
+   - Time Complexity: O(log n)
+     Explanation: Similar to insertion and search, the delete operation traverses the tree, and the height is logarithmic.
+
+5. Find Similar Words (findSimilar):
+   - Time Complexity: O(n)
+     Explanation: This method involves comparing each word in the dictionary with the given word, where n is the number of words in the dictionary.
+
+6. Save Dictionary to File (saveDictionaryToFile):
+   - Time Complexity: O(n)
+     Explanation: This involves traversing the entire AVL tree and writing each word to the file. The time complexity is linear with respect to the number of words in the dictionary.
